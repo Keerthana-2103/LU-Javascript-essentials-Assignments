@@ -1,0 +1,25 @@
+By how many ways we can access elements in the DOM and write about them in brief?
+      solution:
+            There are 5 methods to access elements in the DOM.They are:
+                   1)ID                         getElementById()
+                   2)Class                      getElementsByClassName() 
+                   3)Tag                        getElementsByTagName()
+                   4)Selector(single element)   querySelector()
+                   5)Selector(all)              querySelectorAll()
+
+1)getElementById():
+       getElementId is a method to access any element virtually. It accesses the first element with the specified ID.
+
+2)getElementsByTagName():
+       getElementByTagName allows you to search all the elements with a specified tag name on your page.
+
+3)getElementsByClassName():
+       getElementByClassName allows you to search all the elements with a specified Class name on your page.
+
+4)querySelector():
+       The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.The querySelector() method only returns the first element that matches the specified selectors. To return all the matches, use the querySelectorAll() method instead.
+
+If the selector matches an ID in document that is used several times, it returns the first matching element.
+    
+5)querySelectorAll():
+      The querySelectorAll() method returns all elements in the document that matches a specified CSS selector(s), as a static NodeList object.
