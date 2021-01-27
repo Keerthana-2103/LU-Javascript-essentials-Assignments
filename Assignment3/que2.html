@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Driver's age eligibility problem
+        </title>
+        <script>
+            function ageCheck(){
+          var age=Number(document.getElementById("age").value);
+          if(age<18){
+              alert("Not legal age to drive");
+            
+          }
+          else{
+              alert("Drive safe");
+          }
+        }
+        </script>
+    </head>
+    <body>
+        <h4>Question 2 <br>
+        Write a javascript program that generates an alert "Not legal age to drive" if the driver age is below 18 years old, if driver age is greater than or equal to 18, it generates an alert "Drive safe".</h4>
+        <br>Solution:
+        <br>
+        <h4>Enter your age:<input type="text" id="age"/></h4>
+        <button onclick="ageCheck()">Submit</button>
+    </body>
+</html>
