@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>List&Strings examples</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+    //Question 1:What will be the output code below to the console and why?
+        console.log(1+"2"+"2");
+        console.log(1+ +"2"+"2")
+        console.log(1+ -"1"+"2")
+        console.log(+"1"+"2"+"2")
+        console.log("A"-"B"+"2")
+        console.log("A"-"B"+2)
+
+    //Question 2:
+    /*You are given a variable “marks”. Your task is to print: 
+- AA if the mark is greater than 90 
+- AB if the mark is greater than 80 and less than or equal to 90 
+- BB if the mark is greater than 70and less than or equal to 80 
+- BC if the mark is greater than 60 and less than or equal to 70 
+- CC if the mark is greater than 50 and less than or equal to 60 
+- CD if the mark is greater than 40 and less than or equal to 50 
+- DD if the mark is greater than 30 and less than or equal to 40 
+- FF if the mark is less than or equal to 30 */
+
+      
+       
+       function getGrade(){
+        var marks=Number(document.getElementById("value").value);
+       var result;
+           if (marks >= 90){
+               result = "AA";
+               document.getElementById("grade").value=result
+           }
+           else if(marks > 80 && marks <= 90){
+            result = "AB";
+               document.getElementById("grade").value=result
+           }
+           else if(marks > 70 && marks <= 80){
+            result = "BB";
+               document.getElementById("grade").value=result
+           }
+           else if(marks > 60 && marks <= 70){
+            result = "BC";
+               document.getElementById("grade").value=result
+           }
+           else if(marks > 50 && marks <= 60){
+            result = "CC";
+               document.getElementById("grade").value=result
+           }
+           else if(marks > 40 && marks <= 50){
+            result = "CD";
+               document.getElementById("grade").value=result
+           }
+           else if(marks > 30 && marks <= 40){
+            result = "DD";
+               document.getElementById("grade").value=result
+           }
+           else if( marks <= 30){
+            result = "FF";
+               document.getElementById("grade").value=result
+           }
+           
+       }
+
+    </script>
+</head>
+<body>
+    <h3><u>2:Assignment 1-Lists & Strings</u></h3> 
+    <h4>Question 1:What will be the output code below to the console and why?</h4>
+       <pre>
+            console.log(1+"2"+"2");
+            console.log(1+ +"2"+"2")
+            console.log(1+ -"1"+"2")
+            console.log(+"1"+"2"+"2")
+            console.log("A"-"B"+"2")
+            console.log("A"-"B"+2)
+       </pre>
+       <hr>
+    <h4>Question 2:</h4>
+      <h5>Enter your marks:<input id="value"><br></h5>
+      <button onclick="getGrade()">Get Your Grade</button>
+      <h4>Grade:<input id="grade"></h4>
+      <hr>
+</body>
+</html>
