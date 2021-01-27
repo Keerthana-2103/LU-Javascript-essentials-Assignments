@@ -1,0 +1,8 @@
+What is the value of clothes[0] and why? 
+const clothes = ['jacket', 't-shirt']; 
+clothes.length = 0; 
+console.log(clothes[0]); 
+----------------------------------------------------------
+Solution:
+  The output is Undefined
+   As we initialize an array as a constant variable,its value won't be changed.But here,we declare array's length to 0.So the array's length becomes 0.Therefore the O/p is Undefined
